@@ -28,7 +28,7 @@ p{display: flex;}
 
  
   width: 90%;
-  border-radius: 10px;
+  transition: 1s;
 }
 .p2__title{
     text-align: center;
@@ -63,11 +63,11 @@ body{
     background: linear-gradient(#41798B,#3D5A61);
 }
 p img{
-    border-radius: 10px;
+    border-radius: 20%;
     
 }
 iframe{
-    margin: 5pc;
+    margin-left: 30pc;
     margin-bottom: 2pc;
 }
 h3{
@@ -82,6 +82,7 @@ footer{
 }
 footer p{
     width: 50%;
+    margin-left: 10px;
 }
 .img228{
     width:100px;
@@ -102,22 +103,40 @@ footer{
     padding: 20px;
     
     
+    
 }
 footer img{
     margin: 100px;
 }
 .p img{
     padding: 20px;
-    border-radius: 50%;
+    border-radius: 30%;
+    
     
 }
 .card img{
     padding: 30px;
+    
 }
 body{
     font-family: sans-serif;
 }
 form{
     width: 50%;
+    margin-left: 13pc;
     
+}
+.button1:hover{
+    transform: scale(1);
+}
+footer p{
+    text-align: center;
+    padding: 15px;
+}
+.card:hover{
+    color: white;
+    transition: 1s;
+}
+.p2__title{
+    font-size: 45px;
 }
