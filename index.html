@@ -11,10 +11,10 @@
     <nav>
         <img class="navimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAHlBMVEVHcEyIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiN0yTWAAAACnRSTlMAHnYzsP+QyVTmgDjh3AAAAIBJREFUeAFjwAGEFJB5zK4JyFzx0AZkrmqIADJ3qjMSx5ChmdEQxmF0DZ1kNDV0BpQrGQoGMMNcIbxwAzCPAyoZDJFkg3IdIFwWmFa83ARUvRMYUEwOE4A4aiqqalcotwDCFcVqViTMx6VQR0KBeeh0l6mRCvBwU2tgMMpgoBAAAO7xMao+TU4UAAAAAElFTkSuQmCC"
        width="30px" height="30px">
-    <a class="nav1" href="number1"> Головна</a>
-    <a class="nav2" href="">Товари</a>
-    <a class="nav3" href="">Відгуки</a>
-    <a class="nav4" href=""> Адресса</a>
+    <a class="nav1" href="#section1"> Головна</a>
+    <a class="nav2" href="#section2">Товари</a>
+    <a class="nav3" href="#section3">Відгуки</a>
+    <a class="nav4" href="#section4"> Адресса</a>
     <a class="nav5" href="">Доп.Інформація</a>
 
     </nav>
@@ -24,13 +24,13 @@
     
    
     
-    <section class="section1">
+    <section class="section1" id="section1">
         <div class="section1__hero">
     <h1>Apple</h1>
-     <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Aerial_view_of_Apple_Park_dllu.jpg/274px-Aerial_view_of_Apple_Park_dllu.jpg" width="380px" height="210px" >
+     <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Aerial_view_of_Apple_Park_dllu.jpg/274px-Aerial_view_of_Apple_Park_dllu.jpg" width="50%" height="210px" >
     </div>
     </section>
-    <section>
+    <section id="section2">
         <div class="card">
             <div class="p1">
                 <p>
@@ -87,7 +87,7 @@
             </div>
         </div>    
     </section>
-    <section>
+    <section id="section3">
     <h2>Відгуки</h2>
    <p class="p"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcy-dfMDdrBfMMZYRkIOLgdRJwIMCL-AZDpxY62ytS_ZRk2RdOZ_BzU8VapzRVhTcX9FM&usqp=CAU" width="80px" height="60px"/>Жахливі пристрої дуже сильно гріється та швидко псується</p>
    <p class="p"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu9D_ymqj-EjEdIb_T40wR8ZBQTiNgipydcf_zoyfkLr2G0YE48JOFPyYLmtUsGZupoJ0&usqp=CAU" width="80px" height="60px"/>Дуже чудові пристрої</p>
@@ -96,10 +96,10 @@
     <input type="text" id="reviewFormName" placeholder="name">
     <input type="phone" placeholder="phone number">
     <textarea></textarea>
-    <button type="submit">sumit</button>
+    <button class="button1" type="submit">Відправити</button>
    </form>
     </section>
-    <section>
+    <section id="section4">
     <h3>
     Наше місцезнаходження
     </h3>
@@ -107,7 +107,7 @@
     </section>
     </main>
     <footer>
-        <div >
+    
         <p>
             Наш телефон:+102353264
         </p>
@@ -117,9 +117,9 @@
         <p>
         Our twitter:apple
         </p>
-        </div>
+        
        
-        <img class="img228" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAHlBMVEVHcEyIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiN0yTWAAAACnRSTlMAHnYzsP+QyVTmgDjh3AAAAIBJREFUeAFjwAGEFJB5zK4JyFzx0AZkrmqIADJ3qjMSx5ChmdEQxmF0DZ1kNDV0BpQrGQoGMMNcIbxwAzCPAyoZDJFkg3IdIFwWmFa83ARUvRMYUEwOE4A4aiqqalcotwDCFcVqViTMx6VQR0KBeeh0l6mRCvBwU2tgMMpgoBAAAO7xMao+TU4UAAAAAElFTkSuQmCC"> 
+        
     </footer>
     <script> 
         const buttons=document.querySelectorAll('.pon')
@@ -136,4 +136,3 @@
     </script>
 </body>
 </html>
-
