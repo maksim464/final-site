@@ -9,6 +9,10 @@ nav a{
     margin-right:20px ;
     
 }
+form{
+    display: flex;
+    flex-direction: column;
+}
 .nav1{
     margin-left: 20px;
 }
@@ -109,4 +113,7 @@ footer img{
 }
 .card img{
     padding: 30px;
+}
+body{
+    font-family: sans-serif;
 }
