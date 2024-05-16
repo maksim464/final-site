@@ -27,7 +27,7 @@
     <section class="section1">
         <div class="section1__hero">
     <h1>Apple</h1>
-     <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Aerial_view_of_Apple_Park_dllu.jpg/274px-Aerial_view_of_Apple_Park_dllu.jpg" >
+     <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Aerial_view_of_Apple_Park_dllu.jpg/274px-Aerial_view_of_Apple_Park_dllu.jpg" width="380px" height="210px" >
     </div>
     </section>
     <section>
@@ -67,7 +67,7 @@
         
         </p>
         <p>Ціна:19999</p>
-        <button>Купити</button>
+        <button class="pon">Купити</button>
             </div>
         </div>
         
@@ -83,7 +83,7 @@
                 <p class="p2__title">Iphone</p> <br/>
                 <p class="p2__body">Мобільний телефон який може працювати так швидко як комп’ютер приємний екран дивлючись на який ваші очі не втомлюються </p>
                 <p>Ціна:9999</p>
-                <button>Купити</button>
+                <button class="pon">Купити</button>
             </div>
         </div>    
     </section>
@@ -92,7 +92,12 @@
    <p class="p"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcy-dfMDdrBfMMZYRkIOLgdRJwIMCL-AZDpxY62ytS_ZRk2RdOZ_BzU8VapzRVhTcX9FM&usqp=CAU" width="80px" height="60px"/>Жахливі пристрої дуже сильно гріється та швидко псується</p>
    <p class="p"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu9D_ymqj-EjEdIb_T40wR8ZBQTiNgipydcf_zoyfkLr2G0YE48JOFPyYLmtUsGZupoJ0&usqp=CAU" width="80px" height="60px"/>Дуже чудові пристрої</p>
       <p class="p"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-t1q6qUZKmI7udOpAS5WUlyOmzPu7iWj-867eTqy-DWxLZ39oJ3XVebYpcw3Ct_B389c&usqp=CAU" width="80px" height="60px"/>Гарні пристрої але занадто дорогі буду чекати знижку</p>
-   
+   <form id="reviewForm">
+    <input type="text" id="reviewFormName" placeholder="name">
+    <input type="phone" placeholder="phone number">
+    <textarea></textarea>
+    <button type="submit">sumit</button>
+   </form>
     </section>
     <section>
     <h3>
@@ -117,13 +122,18 @@
         <img class="img228" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAHlBMVEVHcEyIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiN0yTWAAAACnRSTlMAHnYzsP+QyVTmgDjh3AAAAIBJREFUeAFjwAGEFJB5zK4JyFzx0AZkrmqIADJ3qjMSx5ChmdEQxmF0DZ1kNDV0BpQrGQoGMMNcIbxwAzCPAyoZDJFkg3IdIFwWmFa83ARUvRMYUEwOE4A4aiqqalcotwDCFcVqViTMx6VQR0KBeeh0l6mRCvBwU2tgMMpgoBAAAO7xMao+TU4UAAAAAElFTkSuQmCC"> 
     </footer>
     <script> 
-        const buttons=document.querySelectorAll('button')
+        const buttons=document.querySelectorAll('.pon')
         buttons.forEach(btn=>{
             btn.addEventListener('click',()=>{
                  alert('Додано у кошик')
             })
            
         })
+        
+        document.querySelector('#reviewForm').addEventListener('submit',()=>{
+            const name=document.querySelector('#reviewFormName').value
+        alert(`Відгук користувача ${name} відправлено`)})
     </script>
 </body>
 </html>
+
